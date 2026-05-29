@@ -1,5 +1,5 @@
-import { type SchemaTypeDefinition } from 'sanity'
+import { hero } from './hero'
+import { service } from './service'
 
-export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [],
-}
+export const schemaTypes = [hero, service]
+export const schema = { types: [hero, service] }
